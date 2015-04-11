@@ -1,7 +1,7 @@
 # TinyCircuits TinyShield microSD Adapter Board
-# ASD2201 Rev1
+# ASD2201 Rev2
 
-These are the design files for the TinyCircuits ASD2201 Rev 1 PCB.  This is a TinyShield board (Square Version, 20mm x 20mm, or Circular 20mm diameter) that has a microSD connector, local power supply and level shifters to connect to a microSD card.
+These are the design files for the TinyCircuits ASD2201 Rev 2 PCB.  This is a TinyShield board that has a microSD connector, local power supply and level shifters to connect to a microSD card.
 
 Format is in Cadsoft Eagle format - Eagle version 6.2 was used for the original design.
 
