@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -198,9 +198,9 @@
 <hole x="28.5" y="11.5" drill="1.5"/>
 <hole x="11.5" y="11.5" drill="1.5"/>
 <dimension x1="10" y1="30" x2="10" y2="10" x3="5.95" y3="20" layer="48"/>
-<wire x1="31.27" y1="31.27" x2="31.27" y2="10" width="2.54" layer="46"/>
-<wire x1="8.73" y1="10" x2="8.73" y2="31.27" width="2.54" layer="46"/>
-<wire x1="8.73" y1="31.27" x2="31.27" y2="31.27" width="2.54" layer="46"/>
+<wire x1="31.27" y1="31.27" x2="31.27" y2="10" width="2.54" layer="41"/>
+<wire x1="8.73" y1="10" x2="8.73" y2="31.27" width="2.54" layer="41"/>
+<wire x1="8.73" y1="31.27" x2="31.27" y2="31.27" width="2.54" layer="41"/>
 <text x="40.3098" y="14.837396875" size="0.4572" layer="48" ratio="10">Released under the Creative Commons Attribution Share-Alike 3.0 License</text>
 <text x="40.3098" y="14.075396875" size="0.4572" layer="48" ratio="10">http://creativecommons.org/licenses/by-sa/3.0</text>
 <text x="40.3098" y="12.805396875" size="0.4572" layer="48" ratio="10">Original Arduino Uno Design by Team Arduino</text>
@@ -4436,10 +4436,10 @@
 <rectangle x1="17.81301875" y1="28.08731875" x2="18.1127375" y2="28.0924" layer="22"/>
 <rectangle x1="17.853659375" y1="28.0924" x2="18.072096875" y2="28.097475" layer="22"/>
 <rectangle x1="17.879059375" y1="28.097478125" x2="18.041615625" y2="28.102559375" layer="22"/>
-<text x="20" y="23.6" size="0.762" layer="22" rot="MR180" align="bottom-center">Tiny-Circuits.com</text>
+<text x="20" y="23.6" size="0.762" layer="22" rot="MR180" align="bottom-center">TinyCircuits.com</text>
 <text x="20" y="22.1" size="0.762" layer="22" rot="MR180" align="bottom-center">ASD2201 - Rev2</text>
 <text x="20" y="20.6" size="0.762" layer="22" rot="MR180" align="bottom-center">microSD TinyShield</text>
-<text x="11.55" y="9.0678" size="0.635" layer="20">^ V-SCORE EDGE ALONG OUTLINE ^</text>
+<text x="11.55" y="9.0678" size="0.635" layer="41">^ V-SCORE EDGE ALONG OUTLINE ^</text>
 </plain>
 <libraries>
 <library name="tinycircuits">
@@ -4447,16 +4447,11 @@
 <packages>
 <package name="DF12-32-DS">
 <description>Hirose DF12 Pattern with metal fitting, 32 positions</description>
-<wire x1="6.2319" y1="-2.8037" x2="-6.242" y2="-2.791" width="0.2" layer="39"/>
-<wire x1="-6.242" y1="-2.791" x2="-6.242" y2="2.7352" width="0.2" layer="39"/>
-<wire x1="5.3488" y1="-1.3975" x2="-5.392" y2="-1.4102" width="0.2032" layer="51"/>
-<wire x1="-5.392" y1="-1.4102" x2="-5.392" y2="1.2845" width="0.2032" layer="51"/>
-<wire x1="-5.392" y1="1.2845" x2="5.3488" y2="1.2972" width="0.2032" layer="51"/>
-<wire x1="5.2954" y1="-1.0943" x2="-5.3601" y2="-1.0867" width="0.2032" layer="21"/>
-<wire x1="5.3488" y1="1.2972" x2="5.3488" y2="-1.3975" width="0.2032" layer="51"/>
-<wire x1="6.2319" y1="2.7225" x2="6.2319" y2="-2.8037" width="0.2" layer="39"/>
-<wire x1="-6.242" y1="2.7352" x2="6.2319" y2="2.7225" width="0.2" layer="39"/>
-<circle x="-3.7338" y="3.0861" radius="0.127" width="0.127" layer="21"/>
+<wire x1="5.1" y1="-1.9" x2="-5.1" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-5.1" y1="-1.9" x2="-5.1" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-5.1" y1="1.9" x2="5.1" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="5.1" y1="1.9" x2="5.1" y2="-1.9" width="0.2032" layer="51"/>
+<circle x="-3.8" y="3" radius="0.127" width="0.127" layer="21"/>
 <smd name="F1" x="-5.5" y="0" dx="0.9" dy="1.8" layer="1"/>
 <smd name="17" x="0.25" y="1.8001" dx="0.3" dy="1.6" layer="1" cream="no"/>
 <smd name="19" x="0.75" y="1.8001" dx="0.3" dy="1.6" layer="1" cream="no"/>
@@ -4491,7 +4486,7 @@
 <smd name="31" x="3.75" y="1.8001" dx="0.3" dy="1.6" layer="1" cream="no"/>
 <smd name="32" x="3.75" y="-1.8001" dx="0.3" dy="1.6" layer="1" cream="no"/>
 <smd name="2" x="-3.75" y="-1.8001" dx="0.3" dy="1.6" layer="1" cream="no"/>
-<text x="0" y="0" size="0.635" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.762" layer="25" align="center">&gt;NAME</text>
 <rectangle x1="-0.8829" y1="1.651" x2="0.3871" y2="1.8542" layer="51" rot="R90"/>
 <rectangle x1="-1.3833" y1="-1.9685" x2="-0.1133" y2="-1.7653" layer="51" rot="R90"/>
 <rectangle x1="-1.3858" y1="1.6535" x2="-0.1158" y2="1.8567" layer="51" rot="R90"/>
@@ -4524,9 +4519,9 @@
 <rectangle x1="-3.3797" y1="-1.9659" x2="-2.1097" y2="-1.7627" layer="51" rot="R90"/>
 <rectangle x1="-3.8852" y1="-1.9659" x2="-2.6152" y2="-1.7627" layer="51" rot="R90"/>
 <rectangle x1="-4.3855" y1="-1.9659" x2="-3.1155" y2="-1.7627" layer="51" rot="R90"/>
-<hole x="-4.8" y="1.5" drill="0.6"/>
-<hole x="4.8" y="1.5" drill="0.6"/>
-<circle x="-4.2418" y="2.3241" radius="0.127" width="0.127" layer="51"/>
+<hole x="-4.8" y="1.5" drill="0.65"/>
+<hole x="4.8" y="1.5" drill="0.65"/>
+<circle x="-3.8" y="3" radius="0.127" width="0.127" layer="51"/>
 <polygon width="0.127" layer="29">
 <vertex x="-5.5626" y="1.4986" curve="90"/>
 <vertex x="-4.8006" y="0.7366" curve="90"/>
@@ -4571,19 +4566,26 @@
 <rectangle x1="2.1378" y1="1.2066" x2="2.3578" y2="2.5066" layer="31"/>
 <rectangle x1="2.6378" y1="1.2066" x2="2.8578" y2="2.5066" layer="31"/>
 <rectangle x1="3.1378" y1="1.2066" x2="3.3578" y2="2.5066" layer="31"/>
+<polygon width="0.127" layer="30">
+<vertex x="-5.5626" y="1.4986" curve="90"/>
+<vertex x="-4.8006" y="0.7366" curve="90"/>
+<vertex x="-4.0386" y="1.4986" curve="90"/>
+<vertex x="-4.8006" y="2.2606" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="4.0386" y="1.4986" curve="90"/>
+<vertex x="4.8006" y="0.7366" curve="90"/>
+<vertex x="5.5626" y="1.4986" curve="90"/>
+<vertex x="4.8006" y="2.2606" curve="90"/>
+</polygon>
 </package>
 <package name="DF12-32-DP">
 <description>Hirose DF12 Pattern with metal fitting, 32 positions</description>
-<wire x1="6.2319" y1="-2.8037" x2="-6.242" y2="-2.791" width="0.2" layer="39"/>
-<wire x1="-6.242" y1="-2.791" x2="-6.242" y2="2.7352" width="0.2" layer="39"/>
-<wire x1="5.3488" y1="-1.3975" x2="-5.392" y2="-1.4102" width="0.2032" layer="51"/>
-<wire x1="-5.392" y1="-1.4102" x2="-5.392" y2="1.2845" width="0.2032" layer="51"/>
-<wire x1="-5.392" y1="1.2845" x2="5.3488" y2="1.2972" width="0.2032" layer="51"/>
-<wire x1="5.2954" y1="-1.0943" x2="-5.3601" y2="-1.0867" width="0.2032" layer="21"/>
-<wire x1="5.3488" y1="1.2972" x2="5.3488" y2="-1.3975" width="0.2032" layer="51"/>
-<wire x1="6.2319" y1="2.7225" x2="6.2319" y2="-2.8037" width="0.2" layer="39"/>
-<wire x1="-6.242" y1="2.7352" x2="6.2319" y2="2.7225" width="0.2" layer="39"/>
-<circle x="-4.2164" y="-2.413" radius="0.127" width="0.127" layer="21"/>
+<wire x1="5.1" y1="-1.9" x2="-5.1" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-5.1" y1="-1.9" x2="-5.1" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-5.1" y1="1.9" x2="5.1" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="5.1" y1="1.9" x2="5.1" y2="-1.9" width="0.2032" layer="51"/>
+<circle x="-3.8" y="-3" radius="0.127" width="0.127" layer="21"/>
 <smd name="F1" x="-5.5" y="0" dx="0.9" dy="1.8" layer="1"/>
 <smd name="18" x="0.25" y="1.8001" dx="0.3" dy="1.6" layer="1" cream="no"/>
 <smd name="20" x="0.75" y="1.8001" dx="0.3" dy="1.6" layer="1" cream="no"/>
@@ -4618,7 +4620,7 @@
 <smd name="32" x="3.75" y="1.8001" dx="0.3" dy="1.6" layer="1" cream="no"/>
 <smd name="31" x="3.75" y="-1.8001" dx="0.3" dy="1.6" layer="1" cream="no"/>
 <smd name="1" x="-3.75" y="-1.8001" dx="0.3" dy="1.6" layer="1" cream="no"/>
-<text x="0" y="0" size="0.635" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.762" layer="25" align="center">&gt;NAME</text>
 <rectangle x1="-0.8829" y1="1.651" x2="0.3871" y2="1.8542" layer="51" rot="R90"/>
 <rectangle x1="-1.3833" y1="-1.9685" x2="-0.1133" y2="-1.7653" layer="51" rot="R90"/>
 <rectangle x1="-1.3858" y1="1.6535" x2="-0.1158" y2="1.8567" layer="51" rot="R90"/>
@@ -4651,9 +4653,9 @@
 <rectangle x1="-3.3797" y1="-1.9659" x2="-2.1097" y2="-1.7627" layer="51" rot="R90"/>
 <rectangle x1="-3.8852" y1="-1.9659" x2="-2.6152" y2="-1.7627" layer="51" rot="R90"/>
 <rectangle x1="-4.3855" y1="-1.9659" x2="-3.1155" y2="-1.7627" layer="51" rot="R90"/>
-<hole x="-4.8" y="1.5" drill="0.6"/>
-<hole x="4.8" y="1.5" drill="0.6"/>
-<circle x="-4.2164" y="-2.413" radius="0.127" width="0.127" layer="51"/>
+<hole x="-4.8" y="1.5" drill="0.65"/>
+<hole x="4.8" y="1.5" drill="0.65"/>
+<circle x="-3.8" y="-3" radius="0.127" width="0.127" layer="51"/>
 <polygon width="0.127" layer="29">
 <vertex x="-5.5626" y="1.4986" curve="90"/>
 <vertex x="-4.8006" y="0.7366" curve="90"/>
@@ -4698,6 +4700,18 @@
 <rectangle x1="2.6378" y1="-2.5034" x2="2.8578" y2="-1.2034" layer="31"/>
 <rectangle x1="3.1378" y1="-2.5034" x2="3.3578" y2="-1.2034" layer="31"/>
 <rectangle x1="3.6378" y1="-2.5034" x2="3.8578" y2="-1.2034" layer="31"/>
+<polygon width="0.127" layer="30">
+<vertex x="-5.5626" y="1.4986" curve="90"/>
+<vertex x="-4.8006" y="0.7366" curve="90"/>
+<vertex x="-4.0386" y="1.4986" curve="90"/>
+<vertex x="-4.8006" y="2.2606" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="4.0386" y="1.4986" curve="90"/>
+<vertex x="4.8006" y="0.7366" curve="90"/>
+<vertex x="5.5626" y="1.4986" curve="90"/>
+<vertex x="4.8006" y="2.2606" curve="90"/>
+</polygon>
 </package>
 <package name="DOCFIELD-TINYCIRCUITS-PCB">
 <wire x1="0.04318125" y1="0.034290625" x2="17.82318125" y2="0.034290625" width="0.127" layer="48"/>
@@ -4724,7 +4738,7 @@
 <text x="0.55118125" y="5.012690625" size="0.635" layer="48">TITLE:</text>
 <text x="18.25498125" y="0.415290625" size="0.635" layer="48">Sheet:</text>
 <text x="22.31898125" y="2.879090625" size="0.635" layer="48">REV:</text>
-<text x="9.79678125" y="7.001003125" size="0.635" layer="48">http://www.Tiny-Circuits.com</text>
+<text x="9.79678125" y="7.001003125" size="0.635" layer="48">http://www.TinyCircuits.com</text>
 <rectangle x1="1.2214875" y1="6.306059375" x2="1.28091875" y2="6.307584375" layer="48"/>
 <rectangle x1="1.2214875" y1="6.307584375" x2="1.28091875" y2="6.309103125" layer="48"/>
 <rectangle x1="1.2214875" y1="6.30910625" x2="1.28091875" y2="6.31063125" layer="48"/>
@@ -14787,13 +14801,13 @@
 </package>
 <package name="C0402">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-1.0324" y1="0.4272" x2="1.0324" y2="0.4272" width="0.1016" layer="51"/>
-<wire x1="1.007" y1="-0.4272" x2="-1.0324" y2="-0.4272" width="0.1016" layer="51"/>
+<wire x1="-1.04" y1="0.36" x2="1.04" y2="0.36" width="0.1016" layer="51"/>
+<wire x1="1.04" y1="-0.36" x2="-1.04" y2="-0.36" width="0.1016" layer="51"/>
 <smd name="1" x="-0.65" y="0" dx="0.65" dy="0.6" layer="1" cream="no"/>
 <smd name="2" x="0.65" y="0" dx="0.65" dy="0.6" layer="1" cream="no"/>
-<text x="0" y="0" size="0.381" layer="25" align="center">&gt;NAME</text>
-<wire x1="-1.0414" y1="0.4318" x2="-1.0414" y2="-0.4064" width="0.1016" layer="51"/>
-<wire x1="1.0414" y1="0.4318" x2="1.0414" y2="-0.4318" width="0.1016" layer="51"/>
+<text x="0" y="0" size="0.508" layer="25" align="center">&gt;NAME</text>
+<wire x1="-1.04" y1="0.36" x2="-1.04" y2="-0.36" width="0.1016" layer="51"/>
+<wire x1="1.04" y1="0.36" x2="1.04" y2="-0.36" width="0.1016" layer="51"/>
 <rectangle x1="-0.975" y1="-0.3" x2="-0.325" y2="0.3" layer="31"/>
 <rectangle x1="0.325" y1="-0.3" x2="0.975" y2="0.3" layer="31"/>
 </package>
@@ -14805,39 +14819,25 @@
 <circle x="-0.7838" y="-1.2704" radius="0.1524" width="0.127" layer="21"/>
 <text x="0" y="0.01" size="0.5" layer="25" align="center">&gt;NAME</text>
 <circle x="-0.7838" y="-1.2704" radius="0.1524" width="0.127" layer="51"/>
-<smd name="11" x="-0.8" y="0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="10" x="-0.4" y="0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="9" x="0" y="0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="8" x="0.4" y="0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="7" x="0.8" y="0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="3" x="0" y="-0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="4" x="0.4" y="-0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="5" x="0.8" y="-0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="2" x="-0.4" y="-0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="1" x="-0.8" y="-0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="12" x="-0.8" y="0" dx="0.2" dy="0.6" layer="1" rot="R270" stop="no" thermals="no" cream="no"/>
-<smd name="6" x="0.8" y="0" dx="0.2" dy="0.6" layer="1" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="11" x="-0.8" y="0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
+<smd name="10" x="-0.4" y="0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
+<smd name="9" x="0" y="0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
+<smd name="8" x="0.4" y="0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
+<smd name="7" x="0.8" y="0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
+<smd name="3" x="0" y="-0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
+<smd name="4" x="0.4" y="-0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
+<smd name="5" x="0.8" y="-0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
+<smd name="2" x="-0.4" y="-0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
+<smd name="1" x="-0.8" y="-0.65" dx="0.2" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
+<smd name="12" x="-0.8" y="0" dx="0.2" dy="0.6" layer="1" rot="R270" stop="no" thermals="no"/>
+<smd name="6" x="0.8" y="0" dx="0.2" dy="0.6" layer="1" rot="R270" stop="no" thermals="no"/>
 <rectangle x1="-1.1" y1="-0.5" x2="-0.9" y2="-0.35" layer="1"/>
-<rectangle x1="-1.1" y1="-0.5" x2="-0.9" y2="-0.35" layer="31"/>
-<rectangle x1="0.7" y1="-0.95" x2="0.9" y2="-0.35" layer="31"/>
-<rectangle x1="0.3" y1="-0.95" x2="0.5" y2="-0.35" layer="31"/>
-<rectangle x1="-0.1" y1="-0.95" x2="0.1" y2="-0.35" layer="31"/>
-<rectangle x1="-0.5" y1="-0.95" x2="-0.3" y2="-0.35" layer="31"/>
-<rectangle x1="-0.9" y1="-0.95" x2="-0.7" y2="-0.35" layer="31"/>
-<rectangle x1="-0.9" y1="-0.3" x2="-0.7" y2="0.3" layer="31" rot="R90"/>
-<rectangle x1="-0.9" y1="0.35" x2="-0.7" y2="0.95" layer="31" rot="R180"/>
-<rectangle x1="-0.5" y1="0.35" x2="-0.3" y2="0.95" layer="31" rot="R180"/>
-<rectangle x1="-0.1" y1="0.35" x2="0.1" y2="0.95" layer="31" rot="R180"/>
-<rectangle x1="0.3" y1="0.35" x2="0.5" y2="0.95" layer="31" rot="R180"/>
-<rectangle x1="0.7" y1="0.35" x2="0.9" y2="0.95" layer="31" rot="R180"/>
-<rectangle x1="0.7" y1="-0.3" x2="0.9" y2="0.3" layer="31" rot="R270"/>
 <rectangle x1="-1.2" y1="-1.05" x2="1.2" y2="1.05" layer="29"/>
-<wire x1="1.25" y1="0.2" x2="1.15" y2="0.2" width="0.127" layer="41"/>
-<wire x1="1.15" y1="0.2" x2="-1.25" y2="0.2" width="0.127" layer="41"/>
-<wire x1="1.25" y1="-0.2" x2="1.15" y2="-0.2" width="0.127" layer="41"/>
-<wire x1="1.15" y1="-0.2" x2="-1.25" y2="-0.2" width="0.127" layer="41"/>
+<wire x1="1.15" y1="0.2" x2="-1.25" y2="0.2" width="0.19" layer="41"/>
+<wire x1="1.15" y1="-0.2" x2="-1.25" y2="-0.2" width="0.19" layer="41"/>
 <wire x1="1.15" y1="0.2" x2="1.15" y2="1" width="0.127" layer="41"/>
 <wire x1="1.15" y1="-1" x2="1.15" y2="-0.2" width="0.127" layer="41"/>
+<wire x1="0.25" y1="0" x2="-0.25" y2="0" width="0.4" layer="41"/>
 </package>
 <package name="SD_CARD">
 <smd name="4" x="0" y="0" dx="0.7" dy="1.75" layer="1"/>
@@ -14875,36 +14875,36 @@
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.1854" width="0.1524" layer="21"/>
 <wire x1="0.6326" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="21"/>
 <smd name="1" x="-0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
-<text x="0" y="0" size="0.4572" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.762" layer="25" align="center">&gt;NAME</text>
 <rectangle x1="-1.1786" y1="0.7112" x2="-0.7214" y2="1.2954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 <smd name="2" x="0" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
 <smd name="3" x="0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
-<smd name="4" x="0.95" y="1.25" dx="0.55" dy="0.8" layer="1"/>
+<smd name="4" x="0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
 <smd name="5" x="-0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
 <rectangle x1="0.7314" y1="0.7112" x2="1.1886" y2="1.2954" layer="51"/>
 <rectangle x1="-0.2284" y1="-1.3154" x2="0.2288" y2="-0.7312" layer="51"/>
 </package>
 <package name="C1206">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.1016" layer="51"/>
+<wire x1="-1.6" y1="-0.8" x2="1.6" y2="-0.8" width="0.1016" layer="51"/>
 <smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
 <smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
 <text x="0" y="0" size="0.889" layer="25" align="center">&gt;NAME</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.1016" layer="51"/>
+<wire x1="1.6" y1="-0.8" x2="1.6" y2="0.8" width="0.1016" layer="51"/>
 </package>
 <package name="0402">
 <description>Multilayer SMD</description>
-<wire x1="-0.998" y1="0.3504" x2="0.9907" y2="0.3504" width="0.127" layer="51"/>
-<wire x1="0.9907" y1="0.3504" x2="0.9907" y2="-0.3432" width="0.127" layer="51"/>
-<wire x1="0.9907" y1="-0.3432" x2="-0.998" y2="-0.3432" width="0.127" layer="51"/>
-<wire x1="-0.998" y1="-0.3432" x2="-0.998" y2="0.3504" width="0.127" layer="51"/>
+<wire x1="-1" y1="0.35" x2="1" y2="0.35" width="0.127" layer="51"/>
+<wire x1="1" y1="0.35" x2="1" y2="-0.35" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.35" x2="-1" y2="-0.35" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.35" x2="-1" y2="0.35" width="0.127" layer="51"/>
 <smd name="1" x="-0.6" y="0" dx="0.65" dy="0.55" layer="1" cream="no"/>
 <smd name="2" x="0.6" y="0" dx="0.65" dy="0.55" layer="1" cream="no"/>
-<text x="0" y="0" size="0.3048" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.5" layer="25" align="center">&gt;NAME</text>
 <rectangle x1="-0.925" y1="-0.275" x2="-0.275" y2="0.275" layer="31"/>
 <rectangle x1="0.275" y1="-0.275" x2="0.925" y2="0.275" layer="31"/>
 </package>
@@ -14982,10 +14982,10 @@ design rules under a new name.</description>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
-<param name="mvCreamFrame" value="0.1"/>
+<param name="mvCreamFrame" value="0.05"/>
 <param name="mlMinStopFrame" value="4mil"/>
 <param name="mlMaxStopFrame" value="4mil"/>
-<param name="mlMinCreamFrame" value="1mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="4mil"/>
 <param name="mlViaStopLimit" value="25mil"/>
 <param name="srRoundness" value="0"/>
@@ -15110,14 +15110,17 @@ design rules under a new name.</description>
 <element name="U2" library="tinycircuits" package="UQFN-12" value="TXB0104" x="12.2" y="23.5" rot="R180">
 <attribute name="PARTNO" value="AS-ITM-00048" x="12.2" y="23.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" value="TXB0104" x="12.2" y="23.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PNPROTATION" value="0" x="12.2" y="23.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="J3" library="tinycircuits" package="SD_CARD" value="DM3D-SF" x="20.2438" y="28.7274" rot="R180">
 <attribute name="PARTNO" value="AS-ITM-00047" x="20.2438" y="28.7274" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" value="DM3D-SF" x="20.2438" y="28.7274" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PNPROTATION" value="270" x="20.2438" y="28.7274" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U1" library="tinycircuits" package="SOT-25" value="XC6217A33" x="28.243859375" y="19.564665625">
 <attribute name="PARTNO" value="AS-ITM-00249" x="28.243859375" y="19.564665625" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="XC6217A33" x="28.243859375" y="19.564665625" size="1.778" layer="27" display="off"/>
+<attribute name="PNPROTATION" value="270" x="28.243859375" y="19.564665625" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C3" library="tinycircuits" package="C0402" value="0.1uF" x="28.624478125" y="26.56481875">
 <attribute name="PARTNO" value="AS-ITM-00008" x="28.624478125" y="26.56481875" size="1.778" layer="27" display="off"/>
@@ -15604,7 +15607,7 @@ design rules under a new name.</description>
 <wire x1="29.278" y1="21.90178125" x2="29.278" y2="21.428" width="0.3556" layer="1"/>
 <wire x1="29.278" y1="21.428" x2="29.2" y2="21.35" width="0.3556" layer="1"/>
 <wire x1="29.2" y1="21.35" x2="29.2" y2="20.82080625" width="0.3556" layer="1"/>
-<wire x1="29.2" y1="20.82080625" x2="29.193859375" y2="20.814665625" width="0.3556" layer="1"/>
+<wire x1="29.2" y1="20.82080625" x2="29.193859375" y2="20.764665625" width="0.3556" layer="1"/>
 </signal>
 </signals>
 </board>
